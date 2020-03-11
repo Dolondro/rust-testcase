@@ -19,7 +19,7 @@ fn main() {
         ..Default::default()
     };
 
-    let output_file = File::create("/tmp/blah.json").unwrap();
+    let mut output_file = File::create("/tmp/blah.json").unwrap();
 
     let s3_client = S3Client::new(Region::UsEast1);
     let response = s3_client.get_object(request).sync().expect("Couldn't get object");
