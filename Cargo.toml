@@ -1,0 +1,12 @@
+[package]
+
+name = "minimal-testcase"
+version = "0.0.1"
+authors = [ "Doug Nelson <dougnelson@silktide.com>" ]
+edition = "2018"
+
+[dependencies]
+
+rusoto_core = "0.42.0"
+rusoto_s3 = "0.42.0"
+futures = "0.3.4"
